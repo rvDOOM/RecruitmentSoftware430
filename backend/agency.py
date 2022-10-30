@@ -8,8 +8,7 @@ class Agency(cp):
     __all_reqs = {}
 
     def __init__(self, name, industry_sector):
-        self.__name = name
-        self.__industry_sector = industry_sector
+        super().__init__(name, industry_sector)
 
     def add_req(self, ps):
         if ps.get_name() in self.__all_reqs:
@@ -22,9 +21,6 @@ class Agency(cp):
             del self.__all_reqs[ps.get_name()]
         else:
             print("Req is currently not associated with this agency")
-
-    def get_name(self):
-        return self.__name
 
     def get_all_reqs(self):
         return self.__all_reqs
