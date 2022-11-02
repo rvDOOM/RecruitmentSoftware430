@@ -13,9 +13,9 @@ class Position():
         self.__num_of_openings = numOfOpenings
         self.__recruiter = recruiter
 
-    # Deducts past 0. NEED TO FIX
+    # Deduct the req count by the requested amount
     def deduct_req_count(self, num_to_deduct):
-        if self.__num_of_openings >= 0:
+        if num_to_deduct >= self.__num_of_openings:
             self.__num_of_openings -= num_to_deduct
         else:
             print("Number submitted to deduct is greater than current" +
