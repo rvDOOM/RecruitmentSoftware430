@@ -1,6 +1,7 @@
 # The candidate class holds all the information the recruitment firm has on a candidate
 # Contains a dictionary that holds previous work experience
 # where the key is the name of the company they worked for and the value is YOE
+# All methods associated with the dictionary takes a Company object(cp)
 
 
 from company import Company as cp

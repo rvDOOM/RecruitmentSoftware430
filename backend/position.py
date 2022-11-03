@@ -8,6 +8,7 @@ class Position():
     total_reqs_filled = 0
 
     # Constructor
+    # Recruiter field is a Recruiter object
     def __init__(self, position_name, numOfOpenings, recruiter):
         self.__position_name = position_name
         self.__num_of_openings = numOfOpenings
@@ -25,8 +26,9 @@ class Position():
     def add_req_count(self, num_to_add):
         self.__num_of_openings += num_to_add
 
-    def change_recruiter(self, recruiter):
-        self.__recruiter = recruiter
+    # Changes recruiter, must send recruiter object to method
+    def change_recruiter(self, rc):
+        self.__recruiter = rc
 
     # Getters
     def get_num_of_openings(self):
