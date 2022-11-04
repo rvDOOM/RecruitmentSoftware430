@@ -44,7 +44,7 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -257,7 +257,7 @@
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>15</x>
@@ -527,8 +527,31 @@
      <height>19</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionAdd"/>
+    <addaction name="actionView_Candidate_s"/>
+   </widget>
+   <addaction name="menuMenu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd">
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionView_Agency_s">
+   <property name="text">
+    <string>View Agency's</string>
+   </property>
+  </action>
+  <action name="actionView_Candidate_s">
+   <property name="text">
+    <string>View Candidate's</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

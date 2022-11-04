@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Candidates</class>
+ <widget class="QMainWindow" name="Candidates">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -81,6 +81,19 @@
            </property>
           </widget>
          </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
         </layout>
        </item>
        <item>
@@ -112,6 +125,19 @@ NoWhere, SA, 11234</string>
            </property>
           </widget>
          </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
         </layout>
        </item>
        <item>
@@ -141,6 +167,19 @@ NoWhere, SA, 11234</string>
             <string>na@na.com</string>
            </property>
           </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
          </item>
         </layout>
        </item>
@@ -261,8 +300,26 @@ NoWhere, SA, 11234</string>
      <height>19</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuAdd">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionAdd"/>
+    <addaction name="actionView_Candidates"/>
+   </widget>
+   <addaction name="menuAdd"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd">
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionView_Candidates">
+   <property name="text">
+    <string>View Candidates</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
