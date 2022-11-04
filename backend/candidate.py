@@ -4,14 +4,9 @@
 # All methods associated with the dictionary takes a Company object(cp)
 
 
-from company import Company as cp
-
-
 class Candidate():
 
     # Dictionary of work experience KEY = company name Value = YOE
-    __previous_employment = {}
-
     __job_title = "Not Applicable"
 
     # Constructor
@@ -22,6 +17,7 @@ class Candidate():
         self.__phone_number = phone_number
         self.__address = address
         self.__email = email
+        self.__previous_employment = {}
     
     # Getters
 
@@ -69,19 +65,19 @@ class Candidate():
             print("Employment history for this company has already" +
                   "been recorded")
         else:
-            self.__previous_employment[cp.name] = years_worked
+            self.__previous_employment[cp.get_name()] = years_worked
 
     # Removes an entry from previous employement
     def remove_previous_employment(self, cp):
         if cp.get_name() in self.previous_employment:
-            del self.__previous_employment[cp.name]
+            del self.__previous_employment[cp.get_name()]
         else:
             print("Employment never recorded")
 
     # Get a specific entry from previous employment
     def get_prev_employment_instance(self, cp):
         if cp.get_name() in self.__previous_employment:
-            return self.__previous_employment[cp.name]
+            return self.__previous_employment[cp.get_name()]
         else:
             print("Employment never recorded")
 

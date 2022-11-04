@@ -1,8 +1,8 @@
 from PySide2 import QtWidgets
 from GUI import candidate_view
 from GUI import add_objects_view
-from backend.candidate import Candidate
 from backend.company import Company
+from backend.candidate import Candidate
 
 
 class candidate_window(candidate_view.Ui_Candidates,
