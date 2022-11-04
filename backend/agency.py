@@ -8,12 +8,11 @@ from recruiter import Recruiter as rc
 
 
 class Agency(cp):
-
-    __all_reqs = {}
     
     # Constructor
     def __init__(self, name, industry_sector):
         super().__init__(name, industry_sector)
+        self.__all_reqs = {}
     
     # Adds a new position(ps) to the req dictionary
     def add_req(self, ps):
