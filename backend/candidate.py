@@ -15,10 +15,13 @@ class Candidate():
     __job_title = "Not Applicable"
 
     # Constructor
-    def __init__(self, first_name, last_name, employed_status):
+    def __init__(self, first_name, last_name, employed_status, phone_number, address, email):
         self.__first_name = first_name
         self.__last_name = last_name
         self.__employed_status = employed_status
+        self.__phone_number = phone_number
+        self.__address = address
+        self.__email = email
     
     # Getters
 
@@ -32,6 +35,15 @@ class Candidate():
     def get_employment_status(self):
         return self.__employed_status
 
+    def get_phone_number(self):
+        return self.__phone_number
+
+    def get_address(self):
+        return self.__address
+
+    def get_email(self):
+        return self.__email
+
     # Setters
     def set_current_job_title(self, job_title):
         self.__job_title = job_title
@@ -41,6 +53,15 @@ class Candidate():
             self.__employed_status = True
         else:
             self.__employed_status = False
+
+    def set_phone_number(self, phone_number):
+        self.__phone_number = phone_number
+
+    def set_address(self, address):
+        self.__address = address
+
+    def set_email(self, email):
+        self.__email = email
 
     # Adds an entry for candidate's previous employment
     def add_previous_employment(self, cp, years_worked):
