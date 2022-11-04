@@ -35,20 +35,22 @@
      <enum>QFrame::Raised</enum>
     </property>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="list_label">
+     <item row="1" column="0" rowspan="2">
+      <widget class="QListWidget" name="list_data">
        <property name="font">
         <font>
-         <pointsize>28</pointsize>
-         <underline>true</underline>
+         <pointsize>12</pointsize>
+         <underline>false</underline>
         </font>
        </property>
-       <property name="text">
-        <string>Candidate List</string>
+       <property name="sortingEnabled">
+        <bool>true</bool>
        </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
+       <item>
+        <property name="text">
+         <string>Bob Ross</string>
+        </property>
+       </item>
       </widget>
      </item>
      <item row="1" column="1">
@@ -185,6 +187,35 @@ NoWhere, SA, 11234</string>
        </item>
       </layout>
      </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="list_label">
+       <property name="font">
+        <font>
+         <pointsize>28</pointsize>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>Candidate List</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="get_info_button">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <underline>false</underline>
+        </font>
+       </property>
+       <property name="text">
+        <string>Get Candidate Info</string>
+       </property>
+      </widget>
+     </item>
      <item row="2" column="1">
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
@@ -269,24 +300,6 @@ NoWhere, SA, 11234</string>
         </widget>
        </item>
       </layout>
-     </item>
-     <item row="1" column="0" rowspan="2">
-      <widget class="QListWidget" name="list_data">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <underline>false</underline>
-        </font>
-       </property>
-       <property name="sortingEnabled">
-        <bool>true</bool>
-       </property>
-       <item>
-        <property name="text">
-         <string>Bob Ross</string>
-        </property>
-       </item>
-      </widget>
      </item>
     </layout>
    </widget>

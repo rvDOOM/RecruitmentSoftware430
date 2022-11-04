@@ -34,15 +34,16 @@ class Ui_Candidates(object):
         self.frame.setFrameShadow(QFrame.Raised)
         self.gridLayout = QGridLayout(self.frame)
         self.gridLayout.setObjectName(u"gridLayout")
-        self.list_label = QLabel(self.frame)
-        self.list_label.setObjectName(u"list_label")
+        self.list_data = QListWidget(self.frame)
+        QListWidgetItem(self.list_data)
+        self.list_data.setObjectName(u"list_data")
         font1 = QFont()
-        font1.setPointSize(28)
-        font1.setUnderline(True)
-        self.list_label.setFont(font1)
-        self.list_label.setAlignment(Qt.AlignCenter)
+        font1.setPointSize(12)
+        font1.setUnderline(False)
+        self.list_data.setFont(font1)
+        self.list_data.setSortingEnabled(True)
 
-        self.gridLayout.addWidget(self.list_label, 0, 0, 1, 1)
+        self.gridLayout.addWidget(self.list_data, 1, 0, 2, 1)
 
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setObjectName(u"verticalLayout")
@@ -50,16 +51,13 @@ class Ui_Candidates(object):
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.number_data = QLabel(self.frame)
         self.number_data.setObjectName(u"number_data")
-        font2 = QFont()
-        font2.setPointSize(12)
-        font2.setUnderline(False)
-        self.number_data.setFont(font2)
+        self.number_data.setFont(font1)
 
         self.horizontalLayout_2.addWidget(self.number_data)
 
         self.number_label = QLabel(self.frame)
         self.number_label.setObjectName(u"number_label")
-        self.number_label.setFont(font2)
+        self.number_label.setFont(font1)
 
         self.horizontalLayout_2.addWidget(self.number_label)
 
@@ -74,13 +72,13 @@ class Ui_Candidates(object):
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.address_data = QLabel(self.frame)
         self.address_data.setObjectName(u"address_data")
-        self.address_data.setFont(font2)
+        self.address_data.setFont(font1)
 
         self.horizontalLayout.addWidget(self.address_data)
 
         self.address_label = QLabel(self.frame)
         self.address_label.setObjectName(u"address_label")
-        self.address_label.setFont(font2)
+        self.address_label.setFont(font1)
 
         self.horizontalLayout.addWidget(self.address_label)
 
@@ -95,13 +93,13 @@ class Ui_Candidates(object):
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.email_label = QLabel(self.frame)
         self.email_label.setObjectName(u"email_label")
-        self.email_label.setFont(font2)
+        self.email_label.setFont(font1)
 
         self.horizontalLayout_3.addWidget(self.email_label)
 
         self.email_data = QLabel(self.frame)
         self.email_data.setObjectName(u"email_data")
-        self.email_data.setFont(font2)
+        self.email_data.setFont(font1)
 
         self.horizontalLayout_3.addWidget(self.email_data)
 
@@ -114,6 +112,22 @@ class Ui_Candidates(object):
 
 
         self.gridLayout.addLayout(self.verticalLayout, 1, 1, 1, 1)
+
+        self.list_label = QLabel(self.frame)
+        self.list_label.setObjectName(u"list_label")
+        font2 = QFont()
+        font2.setPointSize(28)
+        font2.setUnderline(True)
+        self.list_label.setFont(font2)
+        self.list_label.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout.addWidget(self.list_label, 0, 0, 1, 1)
+
+        self.get_info_button = QPushButton(self.frame)
+        self.get_info_button.setObjectName(u"get_info_button")
+        self.get_info_button.setFont(font1)
+
+        self.gridLayout.addWidget(self.get_info_button, 3, 0, 1, 1)
 
         self.verticalLayout_2 = QVBoxLayout()
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
@@ -148,7 +162,7 @@ class Ui_Candidates(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.work_history_table.sizePolicy().hasHeightForWidth())
         self.work_history_table.setSizePolicy(sizePolicy)
-        self.work_history_table.setFont(font2)
+        self.work_history_table.setFont(font1)
 #if QT_CONFIG(accessibility)
         self.work_history_table.setAccessibleName(u"")
 #endif // QT_CONFIG(accessibility)
@@ -163,14 +177,6 @@ class Ui_Candidates(object):
 
 
         self.gridLayout.addLayout(self.verticalLayout_2, 2, 1, 1, 1)
-
-        self.list_data = QListWidget(self.frame)
-        QListWidgetItem(self.list_data)
-        self.list_data.setObjectName(u"list_data")
-        self.list_data.setFont(font2)
-        self.list_data.setSortingEnabled(True)
-
-        self.gridLayout.addWidget(self.list_data, 1, 0, 2, 1)
 
         Candidates.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(Candidates)
@@ -196,7 +202,13 @@ class Ui_Candidates(object):
         Candidates.setWindowTitle(QCoreApplication.translate("Candidates", u"MainWindow", None))
         self.actionAdd.setText(QCoreApplication.translate("Candidates", u"Add", None))
         self.actionView_Candidates.setText(QCoreApplication.translate("Candidates", u"View Candidates", None))
-        self.list_label.setText(QCoreApplication.translate("Candidates", u"Candidate List", None))
+
+        __sortingEnabled = self.list_data.isSortingEnabled()
+        self.list_data.setSortingEnabled(False)
+        ___qlistwidgetitem = self.list_data.item(0)
+        ___qlistwidgetitem.setText(QCoreApplication.translate("Candidates", u"Bob Ross", None));
+        self.list_data.setSortingEnabled(__sortingEnabled)
+
         self.number_data.setText(QCoreApplication.translate("Candidates", u"Phone Number:", None))
         self.number_label.setText(QCoreApplication.translate("Candidates", u"(917) 885 -0987", None))
         self.address_data.setText(QCoreApplication.translate("Candidates", u"Address:", None))
@@ -204,6 +216,8 @@ class Ui_Candidates(object):
 "NoWhere, SA, 11234", None))
         self.email_label.setText(QCoreApplication.translate("Candidates", u"E-mail:", None))
         self.email_data.setText(QCoreApplication.translate("Candidates", u"na@na.com", None))
+        self.list_label.setText(QCoreApplication.translate("Candidates", u"Candidate List", None))
+        self.get_info_button.setText(QCoreApplication.translate("Candidates", u"Get Candidate Info", None))
         self.work_history_label.setText(QCoreApplication.translate("Candidates", u"Work History", None))
         ___qtablewidgetitem = self.work_history_table.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("Candidates", u"YOE", None));
@@ -212,24 +226,17 @@ class Ui_Candidates(object):
         ___qtablewidgetitem2 = self.work_history_table.verticalHeaderItem(0)
         ___qtablewidgetitem2.setText(QCoreApplication.translate("Candidates", u"New Row", None));
 
-        __sortingEnabled = self.work_history_table.isSortingEnabled()
+        __sortingEnabled1 = self.work_history_table.isSortingEnabled()
         self.work_history_table.setSortingEnabled(False)
         ___qtablewidgetitem3 = self.work_history_table.item(0, 0)
         ___qtablewidgetitem3.setText(QCoreApplication.translate("Candidates", u"5", None));
         ___qtablewidgetitem4 = self.work_history_table.item(0, 1)
         ___qtablewidgetitem4.setText(QCoreApplication.translate("Candidates", u"Arch Industries", None));
-        self.work_history_table.setSortingEnabled(__sortingEnabled)
+        self.work_history_table.setSortingEnabled(__sortingEnabled1)
 
 #if QT_CONFIG(accessibility)
         self.work_history_table.setAccessibleDescription("")
 #endif // QT_CONFIG(accessibility)
-
-        __sortingEnabled1 = self.list_data.isSortingEnabled()
-        self.list_data.setSortingEnabled(False)
-        ___qlistwidgetitem = self.list_data.item(0)
-        ___qlistwidgetitem.setText(QCoreApplication.translate("Candidates", u"Bob Ross", None));
-        self.list_data.setSortingEnabled(__sortingEnabled1)
-
         self.menuAdd.setTitle(QCoreApplication.translate("Candidates", u"Menu", None))
     # retranslateUi
 
