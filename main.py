@@ -25,14 +25,17 @@ class candidate_window(candidate_view.Ui_Candidates,
         self.number_label.setText(str(object.get_phone_number()))
         self.address_label.setText(object.get_address())
         self.email_data.setText(object.get_email())
-        print(len(object.get_all_prev_employment()))
-        self.work_history_table.setRowCount(len(object[selection].get_all_prev_employment()))
+        new_row = len(object.get_all_prev_employment())
 
-        # row = 1
-        # for entry in object.get_all_prev_employment():
-        #     for col in range(2):
-        #         self.work_history_table.setItem(row, col, QtWidgets.QTableWidgetItem())
-
+        self.work_history_table.setRowCount(new_row)
+        prev_company = [key for key in object.get_all_prev_employment()]
+        print(prev_company)
+        for row in range(new_row):
+            for col in range(2):
+                item_company = QtWidgets.QTableWidgetItem(prev_company[row])
+                item_experience = QtWidgets.QTableWidgetItem(object.get_all_prev_employment()[prev_company[row]])
+                self.work_history_table.setItem(row, 0, item_experience)
+                self.work_history_table.setItem(row, 1, item_company)
 
 class add_objects_window(add_objects_view.Ui_MainWindow,
                          QtWidgets.QMainWindow):
@@ -66,7 +69,7 @@ if __name__ == '__main__':
     
     company2 = Company("Company 2", "Somethinghere")
 
-    company3 = Company("Company 3", "SOmethingElse")
+    company3 = Company("Company 3", "SomethingElse")
 
     company4 = Company("Company 4", "whatever")
 
