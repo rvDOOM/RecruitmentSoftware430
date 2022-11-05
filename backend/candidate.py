@@ -6,14 +6,10 @@
 
 class Candidate():
 
-    # Dictionary of work experience KEY = company name Value = YOE
-    __job_title = "Not Applicable"
-
     # Constructor
-    def __init__(self, first_name, last_name, employed_status, phone_number, address, email):
+    def __init__(self, first_name, last_name, phone_number, address, email):
         self.__first_name = first_name
         self.__last_name = last_name
-        self.__employed_status = employed_status
         self.__phone_number = phone_number
         self.__address = address
         self.__email = email
@@ -25,12 +21,6 @@ class Candidate():
     def get_full_name(self):
         return "{} {}".format(self.__first_name, self.__last_name)
 
-    def get_current_job_title(self):
-        return self.__job_title
-
-    def get_employment_status(self):
-        return self.__employed_status
-
     def get_phone_number(self):
         return self.__phone_number
 
@@ -41,15 +31,6 @@ class Candidate():
         return self.__email
 
     # Setters
-    def set_current_job_title(self, job_title):
-        self.__job_title = job_title
-
-    def set_employment_status(self):
-        if self.__employed_status is False:
-            self.__employed_status = True
-        else:
-            self.__employed_status = False
-
     def set_phone_number(self, phone_number):
         self.__phone_number = phone_number
 

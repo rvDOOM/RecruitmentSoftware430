@@ -52,10 +52,10 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout.addWidget(self.label_3)
 
-        self.lineEdit = QLineEdit(self.layoutWidget)
-        self.lineEdit.setObjectName(u"lineEdit")
+        self.agency_name_input = QLineEdit(self.layoutWidget)
+        self.agency_name_input.setObjectName(u"agency_name_input")
 
-        self.horizontalLayout.addWidget(self.lineEdit)
+        self.horizontalLayout.addWidget(self.agency_name_input)
 
 
         self.verticalLayout.addLayout(self.horizontalLayout)
@@ -68,19 +68,19 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_2.addWidget(self.label_7)
 
-        self.lineEdit_2 = QLineEdit(self.layoutWidget)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
+        self.industry_sector_input = QLineEdit(self.layoutWidget)
+        self.industry_sector_input.setObjectName(u"industry_sector_input")
 
-        self.horizontalLayout_2.addWidget(self.lineEdit_2)
+        self.horizontalLayout_2.addWidget(self.industry_sector_input)
 
 
         self.verticalLayout.addLayout(self.horizontalLayout_2)
 
-        self.pushButton = QPushButton(self.layoutWidget)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setFont(font)
+        self.agency_button = QPushButton(self.layoutWidget)
+        self.agency_button.setObjectName(u"agency_button")
+        self.agency_button.setFont(font)
 
-        self.verticalLayout.addWidget(self.pushButton)
+        self.verticalLayout.addWidget(self.agency_button)
 
         self.frame_4 = QFrame(self.frame)
         self.frame_4.setObjectName(u"frame_4")
@@ -95,89 +95,89 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_5 = QHBoxLayout()
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.label_14 = QLabel(self.layoutWidget_2)
-        self.label_14.setObjectName(u"label_14")
-        self.label_14.setFont(font)
+        self.first_name_label = QLabel(self.layoutWidget_2)
+        self.first_name_label.setObjectName(u"first_name_label")
+        self.first_name_label.setFont(font)
 
-        self.horizontalLayout_5.addWidget(self.label_14)
+        self.horizontalLayout_5.addWidget(self.first_name_label)
 
-        self.lineEdit_5 = QLineEdit(self.layoutWidget_2)
-        self.lineEdit_5.setObjectName(u"lineEdit_5")
+        self.candidate_first_name_input = QLineEdit(self.layoutWidget_2)
+        self.candidate_first_name_input.setObjectName(u"candidate_first_name_input")
 
-        self.horizontalLayout_5.addWidget(self.lineEdit_5)
+        self.horizontalLayout_5.addWidget(self.candidate_first_name_input)
 
 
         self.verticalLayout_3.addLayout(self.horizontalLayout_5)
 
         self.horizontalLayout_6 = QHBoxLayout()
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
-        self.label_15 = QLabel(self.layoutWidget_2)
-        self.label_15.setObjectName(u"label_15")
-        self.label_15.setFont(font)
+        self.last_name_label = QLabel(self.layoutWidget_2)
+        self.last_name_label.setObjectName(u"last_name_label")
+        self.last_name_label.setFont(font)
 
-        self.horizontalLayout_6.addWidget(self.label_15)
+        self.horizontalLayout_6.addWidget(self.last_name_label)
 
-        self.lineEdit_6 = QLineEdit(self.layoutWidget_2)
-        self.lineEdit_6.setObjectName(u"lineEdit_6")
+        self.candidate_last_name_input = QLineEdit(self.layoutWidget_2)
+        self.candidate_last_name_input.setObjectName(u"candidate_last_name_input")
 
-        self.horizontalLayout_6.addWidget(self.lineEdit_6)
+        self.horizontalLayout_6.addWidget(self.candidate_last_name_input)
 
 
         self.verticalLayout_3.addLayout(self.horizontalLayout_6)
 
         self.horizontalLayout_9 = QHBoxLayout()
         self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
-        self.label_18 = QLabel(self.layoutWidget_2)
-        self.label_18.setObjectName(u"label_18")
-        self.label_18.setFont(font)
+        self.address_label = QLabel(self.layoutWidget_2)
+        self.address_label.setObjectName(u"address_label")
+        self.address_label.setFont(font)
 
-        self.horizontalLayout_9.addWidget(self.label_18)
+        self.horizontalLayout_9.addWidget(self.address_label)
 
-        self.lineEdit_9 = QLineEdit(self.layoutWidget_2)
-        self.lineEdit_9.setObjectName(u"lineEdit_9")
+        self.address_input = QLineEdit(self.layoutWidget_2)
+        self.address_input.setObjectName(u"address_input")
 
-        self.horizontalLayout_9.addWidget(self.lineEdit_9)
+        self.horizontalLayout_9.addWidget(self.address_input)
 
 
         self.verticalLayout_3.addLayout(self.horizontalLayout_9)
 
         self.horizontalLayout_7 = QHBoxLayout()
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
-        self.label_16 = QLabel(self.layoutWidget_2)
-        self.label_16.setObjectName(u"label_16")
-        self.label_16.setFont(font)
+        self.number_label = QLabel(self.layoutWidget_2)
+        self.number_label.setObjectName(u"number_label")
+        self.number_label.setFont(font)
 
-        self.horizontalLayout_7.addWidget(self.label_16)
+        self.horizontalLayout_7.addWidget(self.number_label)
 
-        self.lineEdit_7 = QLineEdit(self.layoutWidget_2)
-        self.lineEdit_7.setObjectName(u"lineEdit_7")
+        self.number_input = QLineEdit(self.layoutWidget_2)
+        self.number_input.setObjectName(u"number_input")
 
-        self.horizontalLayout_7.addWidget(self.lineEdit_7)
+        self.horizontalLayout_7.addWidget(self.number_input)
 
 
         self.verticalLayout_3.addLayout(self.horizontalLayout_7)
 
         self.horizontalLayout_8 = QHBoxLayout()
         self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
-        self.label_17 = QLabel(self.layoutWidget_2)
-        self.label_17.setObjectName(u"label_17")
-        self.label_17.setFont(font)
+        self.email_label = QLabel(self.layoutWidget_2)
+        self.email_label.setObjectName(u"email_label")
+        self.email_label.setFont(font)
 
-        self.horizontalLayout_8.addWidget(self.label_17)
+        self.horizontalLayout_8.addWidget(self.email_label)
 
-        self.lineEdit_8 = QLineEdit(self.layoutWidget_2)
-        self.lineEdit_8.setObjectName(u"lineEdit_8")
+        self.email_input = QLineEdit(self.layoutWidget_2)
+        self.email_input.setObjectName(u"email_input")
 
-        self.horizontalLayout_8.addWidget(self.lineEdit_8)
+        self.horizontalLayout_8.addWidget(self.email_input)
 
 
         self.verticalLayout_3.addLayout(self.horizontalLayout_8)
 
-        self.pushButton_3 = QPushButton(self.layoutWidget_2)
-        self.pushButton_3.setObjectName(u"pushButton_3")
-        self.pushButton_3.setFont(font)
+        self.candidate_button = QPushButton(self.layoutWidget_2)
+        self.candidate_button.setObjectName(u"candidate_button")
+        self.candidate_button.setFont(font)
 
-        self.verticalLayout_3.addWidget(self.pushButton_3)
+        self.verticalLayout_3.addWidget(self.candidate_button)
 
         self.frame_5 = QFrame(self.frame)
         self.frame_5.setObjectName(u"frame_5")
@@ -200,10 +200,10 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_4.addWidget(self.label_5)
 
-        self.listView = QListView(self.layoutWidget1)
-        self.listView.setObjectName(u"listView")
+        self.agency_list = QListWidget(self.layoutWidget1)
+        self.agency_list.setObjectName(u"agency_list")
 
-        self.verticalLayout_4.addWidget(self.listView)
+        self.verticalLayout_4.addWidget(self.agency_list)
 
         self.verticalLayout_6 = QVBoxLayout()
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
@@ -215,10 +215,10 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_12.addWidget(self.label_22)
 
-        self.lineEdit_12 = QLineEdit(self.layoutWidget1)
-        self.lineEdit_12.setObjectName(u"lineEdit_12")
+        self.position_name_input = QLineEdit(self.layoutWidget1)
+        self.position_name_input.setObjectName(u"position_name_input")
 
-        self.horizontalLayout_12.addWidget(self.lineEdit_12)
+        self.horizontalLayout_12.addWidget(self.position_name_input)
 
 
         self.verticalLayout_6.addLayout(self.horizontalLayout_12)
@@ -231,10 +231,10 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_13.addWidget(self.label_23)
 
-        self.lineEdit_13 = QLineEdit(self.layoutWidget1)
-        self.lineEdit_13.setObjectName(u"lineEdit_13")
+        self.num_openings_input = QLineEdit(self.layoutWidget1)
+        self.num_openings_input.setObjectName(u"num_openings_input")
 
-        self.horizontalLayout_13.addWidget(self.lineEdit_13)
+        self.horizontalLayout_13.addWidget(self.num_openings_input)
 
 
         self.verticalLayout_6.addLayout(self.horizontalLayout_13)
@@ -247,19 +247,19 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_14.addWidget(self.label_24)
 
-        self.comboBox = QComboBox(self.layoutWidget1)
-        self.comboBox.setObjectName(u"comboBox")
+        self.recruiter_dropdown = QComboBox(self.layoutWidget1)
+        self.recruiter_dropdown.setObjectName(u"recruiter_dropdown")
 
-        self.horizontalLayout_14.addWidget(self.comboBox)
+        self.horizontalLayout_14.addWidget(self.recruiter_dropdown)
 
 
         self.verticalLayout_6.addLayout(self.horizontalLayout_14)
 
-        self.pushButton_5 = QPushButton(self.layoutWidget1)
-        self.pushButton_5.setObjectName(u"pushButton_5")
-        self.pushButton_5.setFont(font)
+        self.position_button = QPushButton(self.layoutWidget1)
+        self.position_button.setObjectName(u"position_button")
+        self.position_button.setFont(font)
 
-        self.verticalLayout_6.addWidget(self.pushButton_5)
+        self.verticalLayout_6.addWidget(self.position_button)
 
 
         self.verticalLayout_4.addLayout(self.verticalLayout_6)
@@ -299,36 +299,41 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_10.addWidget(self.label_20)
 
-        self.lineEdit_10 = QLineEdit(self.layoutWidget_3)
-        self.lineEdit_10.setObjectName(u"lineEdit_10")
+        self.recruiter_first_name_input = QLineEdit(self.layoutWidget_3)
+        self.recruiter_first_name_input.setObjectName(u"recruiter_first_name_input")
 
-        self.horizontalLayout_10.addWidget(self.lineEdit_10)
+        self.horizontalLayout_10.addWidget(self.recruiter_first_name_input)
 
 
         self.verticalLayout_5.addLayout(self.horizontalLayout_10)
 
         self.horizontalLayout_11 = QHBoxLayout()
         self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
-        self.label_21 = QLabel(self.layoutWidget_3)
-        self.label_21.setObjectName(u"label_21")
-        self.label_21.setFont(font)
+        self.label_4 = QLabel(self.layoutWidget_3)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setFont(font)
 
-        self.horizontalLayout_11.addWidget(self.label_21)
+        self.horizontalLayout_11.addWidget(self.label_4)
 
-        self.lineEdit_11 = QLineEdit(self.layoutWidget_3)
-        self.lineEdit_11.setObjectName(u"lineEdit_11")
+        self.recruiter_last_name_input = QLineEdit(self.layoutWidget_3)
+        self.recruiter_last_name_input.setObjectName(u"recruiter_last_name_input")
 
-        self.horizontalLayout_11.addWidget(self.lineEdit_11)
+        self.horizontalLayout_11.addWidget(self.recruiter_last_name_input)
 
 
         self.verticalLayout_5.addLayout(self.horizontalLayout_11)
 
-        self.pushButton_4 = QPushButton(self.layoutWidget_3)
-        self.pushButton_4.setObjectName(u"pushButton_4")
-        self.pushButton_4.setFont(font)
+        self.recruiter_button = QPushButton(self.layoutWidget_3)
+        self.recruiter_button.setObjectName(u"recruiter_button")
+        self.recruiter_button.setFont(font)
 
-        self.verticalLayout_5.addWidget(self.pushButton_4)
+        self.verticalLayout_5.addWidget(self.recruiter_button)
 
+        self.event_label = QLabel(self.frame)
+        self.event_label.setObjectName(u"event_label")
+        self.event_label.setGeometry(QRect(1, 439, 361, 61))
+        self.event_label.setFont(font)
+        self.event_label.setAlignment(Qt.AlignCenter)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -356,25 +361,26 @@ class Ui_MainWindow(object):
         self.actionView_Candidate_s.setText(QCoreApplication.translate("MainWindow", u"View Candidate's", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Agency Name:", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Industry Sector:", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Submit", None))
-        self.label_14.setText(QCoreApplication.translate("MainWindow", u"First Name:", None))
-        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Last Name:", None))
-        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Address:", None))
-        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Phone Number: ", None))
-        self.label_17.setText(QCoreApplication.translate("MainWindow", u"E-mail: ", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Submit", None))
+        self.agency_button.setText(QCoreApplication.translate("MainWindow", u"Submit", None))
+        self.first_name_label.setText(QCoreApplication.translate("MainWindow", u"First Name:", None))
+        self.last_name_label.setText(QCoreApplication.translate("MainWindow", u"Last Name:", None))
+        self.address_label.setText(QCoreApplication.translate("MainWindow", u"Address:", None))
+        self.number_label.setText(QCoreApplication.translate("MainWindow", u"Phone Number: ", None))
+        self.email_label.setText(QCoreApplication.translate("MainWindow", u"E-mail: ", None))
+        self.candidate_button.setText(QCoreApplication.translate("MainWindow", u"Submit", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Agency List", None))
         self.label_22.setText(QCoreApplication.translate("MainWindow", u"Position Name:", None))
         self.label_23.setText(QCoreApplication.translate("MainWindow", u"Number of Openings:", None))
         self.label_24.setText(QCoreApplication.translate("MainWindow", u"Recruiter ", None))
-        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"Submit", None))
+        self.position_button.setText(QCoreApplication.translate("MainWindow", u"Submit", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Add Agency", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Add Candidate", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Add Req", None))
         self.label_19.setText(QCoreApplication.translate("MainWindow", u"Add Recruiter", None))
         self.label_20.setText(QCoreApplication.translate("MainWindow", u"First Name:", None))
-        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Last Name:", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Submit", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Last Name:", None))
+        self.recruiter_button.setText(QCoreApplication.translate("MainWindow", u"Submit", None))
+        self.event_label.setText("")
         self.menuMenu.setTitle(QCoreApplication.translate("MainWindow", u"Menu", None))
     # retranslateUi
 

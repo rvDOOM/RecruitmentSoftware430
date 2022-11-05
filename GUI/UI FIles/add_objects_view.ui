@@ -69,7 +69,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit"/>
+          <widget class="QLineEdit" name="agency_name_input"/>
          </item>
         </layout>
        </item>
@@ -88,12 +88,12 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_2"/>
+          <widget class="QLineEdit" name="industry_sector_input"/>
          </item>
         </layout>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="agency_button">
          <property name="font">
           <font>
            <pointsize>12</pointsize>
@@ -135,7 +135,7 @@
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_5">
          <item>
-          <widget class="QLabel" name="label_14">
+          <widget class="QLabel" name="first_name_label">
            <property name="font">
             <font>
              <pointsize>12</pointsize>
@@ -147,14 +147,14 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_5"/>
+          <widget class="QLineEdit" name="candidate_first_name_input"/>
          </item>
         </layout>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_6">
          <item>
-          <widget class="QLabel" name="label_15">
+          <widget class="QLabel" name="last_name_label">
            <property name="font">
             <font>
              <pointsize>12</pointsize>
@@ -166,14 +166,14 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_6"/>
+          <widget class="QLineEdit" name="candidate_last_name_input"/>
          </item>
         </layout>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_9">
          <item>
-          <widget class="QLabel" name="label_18">
+          <widget class="QLabel" name="address_label">
            <property name="font">
             <font>
              <pointsize>12</pointsize>
@@ -185,14 +185,14 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_9"/>
+          <widget class="QLineEdit" name="address_input"/>
          </item>
         </layout>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_7">
          <item>
-          <widget class="QLabel" name="label_16">
+          <widget class="QLabel" name="number_label">
            <property name="font">
             <font>
              <pointsize>12</pointsize>
@@ -204,14 +204,14 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_7"/>
+          <widget class="QLineEdit" name="number_input"/>
          </item>
         </layout>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_8">
          <item>
-          <widget class="QLabel" name="label_17">
+          <widget class="QLabel" name="email_label">
            <property name="font">
             <font>
              <pointsize>12</pointsize>
@@ -223,12 +223,12 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_8"/>
+          <widget class="QLineEdit" name="email_input"/>
          </item>
         </layout>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="candidate_button">
          <property name="font">
           <font>
            <pointsize>12</pointsize>
@@ -284,7 +284,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QListView" name="listView"/>
+        <widget class="QListWidget" name="agency_list"/>
        </item>
        <item>
         <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -303,7 +303,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_12"/>
+            <widget class="QLineEdit" name="position_name_input"/>
            </item>
           </layout>
          </item>
@@ -322,7 +322,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_13"/>
+            <widget class="QLineEdit" name="num_openings_input"/>
            </item>
           </layout>
          </item>
@@ -341,12 +341,12 @@
             </widget>
            </item>
            <item>
-            <widget class="QComboBox" name="comboBox"/>
+            <widget class="QComboBox" name="recruiter_dropdown"/>
            </item>
           </layout>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_5">
+          <widget class="QPushButton" name="position_button">
            <property name="font">
             <font>
              <pointsize>12</pointsize>
@@ -478,14 +478,14 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_10"/>
+          <widget class="QLineEdit" name="recruiter_first_name_input"/>
          </item>
         </layout>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_11">
          <item>
-          <widget class="QLabel" name="label_21">
+          <widget class="QLabel" name="label_4">
            <property name="font">
             <font>
              <pointsize>12</pointsize>
@@ -497,12 +497,12 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_11"/>
+          <widget class="QLineEdit" name="recruiter_last_name_input"/>
          </item>
         </layout>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QPushButton" name="recruiter_button">
          <property name="font">
           <font>
            <pointsize>12</pointsize>
@@ -515,6 +515,27 @@
        </item>
       </layout>
      </widget>
+    </widget>
+    <widget class="QLabel" name="event_label">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>439</y>
+       <width>361</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
    </widget>
   </widget>
@@ -533,6 +554,7 @@
     </property>
     <addaction name="actionAdd"/>
     <addaction name="actionView_Candidate_s"/>
+    <addaction name="actionView_Job_Orders"/>
    </widget>
    <addaction name="menuMenu"/>
   </widget>
@@ -549,7 +571,12 @@
   </action>
   <action name="actionView_Candidate_s">
    <property name="text">
-    <string>View Candidate's</string>
+    <string>View Candidates</string>
+   </property>
+  </action>
+  <action name="actionView_Job_Orders">
+   <property name="text">
+    <string>View Agency Reqs</string>
    </property>
   </action>
  </widget>

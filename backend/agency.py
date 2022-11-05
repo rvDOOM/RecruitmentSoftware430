@@ -2,10 +2,7 @@
 # The class contains a dictionary that holds every Position where the agency is actively seeking candidates
 # All dictionary methods must pass a Position object to function
 
-from company import Company as cp
-from position import Position as ps
-from recruiter import Recruiter as rc
-
+from backend.company import Company as cp
 
 class Agency(cp):
     
@@ -29,7 +26,7 @@ class Agency(cp):
             print("Req is currently not associated with this agency")
 
     def get_req(self, ps):
-        return self.__all_reqs[ps]
+        return self.__all_reqs[ps.get_name()]
     
     # Get the req dictionary
     def get_all_reqs(self):

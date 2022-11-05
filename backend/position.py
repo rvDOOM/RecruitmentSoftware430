@@ -1,8 +1,5 @@
 # This class represents all positions the recruitment firm is actively recruiting on
 
-from recruiter import Recruiter as rc
-
-
 class Position():
 
     total_reqs_filled = 0
