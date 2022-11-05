@@ -88,7 +88,7 @@
     </column>
     <column>
      <property name="text">
-      <string>Recommended Candidates</string>
+      <string>Recruiter</string>
      </property>
     </column>
    </widget>
@@ -336,7 +336,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMenu">
