@@ -86,6 +86,11 @@
       </color>
      </property>
     </column>
+    <column>
+     <property name="text">
+      <string>Recommended Candidates</string>
+     </property>
+    </column>
    </widget>
    <widget class="QToolButton" name="toolButton_2">
     <property name="geometry">
@@ -151,7 +156,7 @@
     <widget class="QWidget" name="gridLayoutWidget">
      <property name="geometry">
       <rect>
-       <x>19</x>
+       <x>20</x>
        <y>80</y>
        <width>341</width>
        <height>80</height>
@@ -230,6 +235,52 @@
         </item>
         <item>
          <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="rec_name_data">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <underline>false</underline>
+           </font>
+          </property>
+          <property name="text">
+           <string>Recruiter: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="rec_name_label">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <underline>false</underline>
+           </font>
+          </property>
+          <property name="text">
+           <string>Doe, John</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_10">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
