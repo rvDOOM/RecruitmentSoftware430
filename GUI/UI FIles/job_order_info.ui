@@ -179,12 +179,16 @@
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="company_comboBox">
-          <item>
-           <property name="text">
-            <string>Grant Associates</string>
-           </property>
-          </item>
+         <widget class="QLabel" name="is_label_2">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+            <underline>false</underline>
+           </font>
+          </property>
+          <property name="text">
+           <string>Grant Associates</string>
+          </property>
          </widget>
         </item>
         <item>
